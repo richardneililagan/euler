@@ -3,7 +3,6 @@
 # :: ---
 
 COINS = [200, 100, 50, 20, 10, 5, 2, 1]
-PAIRS = [ (COINS[i], COINS[i + 1]) for i in range(0, len(COINS) - 1) ]
 
 def coin_count (change, i):
     coin = COINS[i]
