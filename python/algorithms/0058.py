@@ -11,10 +11,7 @@ def is_prime (n):
         return False
     # :: ---
     limit = int(sqrt(n) + 0.5)
-    for d in range(2, limit + 1):
-        if n % d == 0: return False
-
-    return True
+    return next((x for x in range(2, limit + 1) if n % x == 0), 0) == 0
 
 def generator ():
     side_length = 1
